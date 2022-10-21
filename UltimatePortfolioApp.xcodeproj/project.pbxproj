@@ -13,6 +13,8 @@
 		4444E98B28F9864B00499F48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4444E98A28F9864B00499F48 /* Preview Assets.xcassets */; };
 		4444E99328F986E400499F48 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4444E99128F986E400499F48 /* Main.xcdatamodeld */; };
 		4444E99528F98A0E00499F48 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444E99428F98A0E00499F48 /* DataController.swift */; };
+		44884D792902C97B007397ED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44884D782902C97B007397ED /* HomeView.swift */; };
+		44884D7B2902CA0E007397ED /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44884D7A2902CA0E007397ED /* ProjectsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		4444E99428F98A0E00499F48 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		4444E99628F9918B00499F48 /* UltimatePortfolioApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolioApp.entitlements; sourceTree = "<group>"; };
 		4444E99728F9919100499F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		44884D782902C97B007397ED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		44884D7A2902CA0E007397ED /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 		4444E98228F9864800499F48 /* UltimatePortfolioApp */ = {
 			isa = PBXGroup;
 			children = (
+				44884D782902C97B007397ED /* HomeView.swift */,
+				44884D7A2902CA0E007397ED /* ProjectsView.swift */,
 				4444E99728F9919100499F48 /* Info.plist */,
 				4444E99628F9918B00499F48 /* UltimatePortfolioApp.entitlements */,
 				4444E98328F9864800499F48 /* UltimatePortfolioAppApp.swift */,
@@ -147,9 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44884D7B2902CA0E007397ED /* ProjectsView.swift in Sources */,
 				4444E99328F986E400499F48 /* Main.xcdatamodeld in Sources */,
 				4444E99528F98A0E00499F48 /* DataController.swift in Sources */,
 				4444E98628F9864800499F48 /* ContentView.swift in Sources */,
+				44884D792902C97B007397ED /* HomeView.swift in Sources */,
 				4444E98428F9864800499F48 /* UltimatePortfolioAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
