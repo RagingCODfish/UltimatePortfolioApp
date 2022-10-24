@@ -65,18 +65,18 @@
 		4444E98228F9864800499F48 /* UltimatePortfolioApp */ = {
 			isa = PBXGroup;
 			children = (
-				44884D782902C97B007397ED /* HomeView.swift */,
-				44884D7A2902CA0E007397ED /* ProjectsView.swift */,
-				4444E99728F9919100499F48 /* Info.plist */,
 				4444E99628F9918B00499F48 /* UltimatePortfolioApp.entitlements */,
 				4444E98328F9864800499F48 /* UltimatePortfolioAppApp.swift */,
-				4444E98528F9864800499F48 /* ContentView.swift */,
+				44884D782902C97B007397ED /* HomeView.swift */,
+				44884D7A2902CA0E007397ED /* ProjectsView.swift */,
 				44884D7C29063199007397ED /* Item-CoreDataHelpers.swift */,
 				44884D7E2906329D007397ED /* Project-CoreDataHelpers.swift */,
+				4444E98528F9864800499F48 /* ContentView.swift */,
+				4444E98728F9864B00499F48 /* Assets.xcassets */,
+				4444E99728F9919100499F48 /* Info.plist */,
+				4444E98928F9864B00499F48 /* Preview Content */,
 				4444E99128F986E400499F48 /* Main.xcdatamodeld */,
 				4444E99428F98A0E00499F48 /* DataController.swift */,
-				4444E98728F9864B00499F48 /* Assets.xcassets */,
-				4444E98928F9864B00499F48 /* Preview Content */,
 			);
 			path = UltimatePortfolioApp;
 			sourceTree = "<group>";
