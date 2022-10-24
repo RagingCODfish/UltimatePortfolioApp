@@ -19,6 +19,7 @@
 		44884D7F2906329D007397ED /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44884D7E2906329D007397ED /* Project-CoreDataHelpers.swift */; };
 		44884DA529064817007397ED /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44884DA429064817007397ED /* EditItemView.swift */; };
 		44884DA729064C48007397ED /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44884DA629064C48007397ED /* ItemRowView.swift */; };
+		44884DA9290654B3007397ED /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44884DA8290654B3007397ED /* Binding-OnChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		44884D7E2906329D007397ED /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		44884DA429064817007397ED /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		44884DA629064C48007397ED /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		44884DA8290654B3007397ED /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				44884D7E2906329D007397ED /* Project-CoreDataHelpers.swift */,
 				4444E98528F9864800499F48 /* ContentView.swift */,
 				44884DA429064817007397ED /* EditItemView.swift */,
+				44884DA8290654B3007397ED /* Binding-OnChange.swift */,
 				4444E98728F9864B00499F48 /* Assets.xcassets */,
 				4444E99728F9919100499F48 /* Info.plist */,
 				4444E98928F9864B00499F48 /* Preview Content */,
@@ -171,6 +174,7 @@
 				4444E99528F98A0E00499F48 /* DataController.swift in Sources */,
 				44884DA729064C48007397ED /* ItemRowView.swift in Sources */,
 				4444E98628F9864800499F48 /* ContentView.swift in Sources */,
+				44884DA9290654B3007397ED /* Binding-OnChange.swift in Sources */,
 				44884D792902C97B007397ED /* HomeView.swift in Sources */,
 				4444E98428F9864800499F48 /* UltimatePortfolioAppApp.swift in Sources */,
 				44884D7D29063199007397ED /* Item-CoreDataHelpers.swift in Sources */,
