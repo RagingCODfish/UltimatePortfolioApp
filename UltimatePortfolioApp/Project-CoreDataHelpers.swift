@@ -16,7 +16,7 @@ extension Project {
         detail ?? ""
     }
     
-    var prjectColor: String {
+    var projectColor: String {
         color ?? "Light Blue"
     }
     

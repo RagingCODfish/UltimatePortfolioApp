@@ -20,6 +20,8 @@
 		44884DA529064817007397ED /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44884DA429064817007397ED /* EditItemView.swift */; };
 		44884DA729064C48007397ED /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44884DA629064C48007397ED /* ItemRowView.swift */; };
 		44884DA9290654B3007397ED /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44884DA8290654B3007397ED /* Binding-OnChange.swift */; };
+		44884DAB29065E6A007397ED /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44884DAA29065E6A007397ED /* ProjectHeaderView.swift */; };
+		44884DAD290661A6007397ED /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44884DAC290661A6007397ED /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		44884DA429064817007397ED /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		44884DA629064C48007397ED /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		44884DA8290654B3007397ED /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
+		44884DAA29065E6A007397ED /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
+		44884DAC290661A6007397ED /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +84,10 @@
 				44884D7E2906329D007397ED /* Project-CoreDataHelpers.swift */,
 				4444E98528F9864800499F48 /* ContentView.swift */,
 				44884DA429064817007397ED /* EditItemView.swift */,
+				44884DAA29065E6A007397ED /* ProjectHeaderView.swift */,
 				44884DA8290654B3007397ED /* Binding-OnChange.swift */,
 				4444E98728F9864B00499F48 /* Assets.xcassets */,
+				44884DAC290661A6007397ED /* Colors.xcassets */,
 				4444E99728F9919100499F48 /* Info.plist */,
 				4444E98928F9864B00499F48 /* Preview Content */,
 				4444E99128F986E400499F48 /* Main.xcdatamodeld */,
@@ -156,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44884DAD290661A6007397ED /* Colors.xcassets in Resources */,
 				4444E98B28F9864B00499F48 /* Preview Assets.xcassets in Resources */,
 				4444E98828F9864B00499F48 /* Assets.xcassets in Resources */,
 			);
@@ -169,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44884D7B2902CA0E007397ED /* ProjectsView.swift in Sources */,
+				44884DAB29065E6A007397ED /* ProjectHeaderView.swift in Sources */,
 				4444E99328F986E400499F48 /* Main.xcdatamodeld in Sources */,
 				44884D7F2906329D007397ED /* Project-CoreDataHelpers.swift in Sources */,
 				4444E99528F98A0E00499F48 /* DataController.swift in Sources */,
