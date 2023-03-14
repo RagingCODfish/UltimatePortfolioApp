@@ -13,7 +13,6 @@
 		4444E98B28F9864B00499F48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4444E98A28F9864B00499F48 /* Preview Assets.xcassets */; };
 		4444E99328F986E400499F48 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4444E99128F986E400499F48 /* Main.xcdatamodeld */; };
 		4444E99528F98A0E00499F48 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444E99428F98A0E00499F48 /* DataController.swift */; };
-		444E47A329C04C6900A0784A /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 444E47A229C04C6900A0784A /* Awards.json */; };
 		444E47A629C04C6F00A0784A /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 444E47A429C04C6F00A0784A /* Awards.json */; };
 		4482A4F5290968A4006A5C0D /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482A4F4290968A4006A5C0D /* Color-Additions.swift */; };
 		4482A4FA290A13F6006A5C0D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4482A4FC290A13F6006A5C0D /* Localizable.strings */; };
@@ -45,8 +44,8 @@
 		4444E99428F98A0E00499F48 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		4444E99628F9918B00499F48 /* UltimatePortfolioApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolioApp.entitlements; sourceTree = "<group>"; };
 		4444E99728F9919100499F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		444E47A229C04C6900A0784A /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		444E47A529C04C6F00A0784A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = "../../../../../Downloads/portfolio-i18n 4/en.lproj/Awards.json"; sourceTree = "<group>"; };
+		444E47B329C0948200A0784A /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = hu; path = "../../../../../Downloads/portfolio-i18n 4/hu.lproj/Awards.json"; sourceTree = "<group>"; };
 		4482A4F4290968A4006A5C0D /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		4482A4FB290A13F6006A5C0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4482A4FD290A1406006A5C0D /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -119,7 +118,7 @@
 				44C9983E2907C4C300B2CCC0 /* Award.swift */,
 				44C998402907C56F00B2CCC0 /* AwardsView.swift */,
 				4482A4F4290968A4006A5C0D /* Color-Additions.swift */,
-				444E47A729C04C9D00A0784A /* Award Strings */,
+				444E47A429C04C6F00A0784A /* Awards.json */,
 				4482A4FC290A13F6006A5C0D /* Localizable.strings */,
 				4444E99728F9919100499F48 /* Info.plist */,
 				4444E98928F9864B00499F48 /* Preview Content */,
@@ -135,15 +134,6 @@
 				4444E98A28F9864B00499F48 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		444E47A729C04C9D00A0784A /* Award Strings */ = {
-			isa = PBXGroup;
-			children = (
-				444E47A429C04C6F00A0784A /* Awards.json */,
-				444E47A229C04C6900A0784A /* Awards.json */,
-			);
-			path = "Award Strings";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +198,6 @@
 			files = (
 				4482A4FA290A13F6006A5C0D /* Localizable.strings in Resources */,
 				444E47A629C04C6F00A0784A /* Awards.json in Resources */,
-				444E47A329C04C6900A0784A /* Awards.json in Resources */,
 				44884DAD290661A6007397ED /* Colors.xcassets in Resources */,
 				4444E98B28F9864B00499F48 /* Preview Assets.xcassets in Resources */,
 				4444E98828F9864B00499F48 /* Assets.xcassets in Resources */,
@@ -274,6 +263,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				444E47A529C04C6F00A0784A /* en */,
+				444E47B329C0948200A0784A /* hu */,
 			);
 			name = Awards.json;
 			sourceTree = "<group>";
