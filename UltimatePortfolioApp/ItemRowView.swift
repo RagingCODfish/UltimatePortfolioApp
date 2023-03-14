@@ -22,7 +22,7 @@ struct ItemRowView: View {
                 .foregroundColor(.clear)
         }
     }
-	
+
 	var label: Text {
 		if item.completed {
 			return Text("\(item.itemDetail), completed.")

@@ -10,8 +10,8 @@ import SwiftUI
 struct ItemListView: View {
 	let title: LocalizedStringKey
 	let items: FetchedResults<Item>.SubSequence
-	
-    var body: some View {
+
+	var body: some View {
 		if items.isEmpty {
 			EmptyView()
 		} else {
@@ -19,20 +19,20 @@ struct ItemListView: View {
 				.font(.headline)
 				.foregroundColor(.secondary)
 				.padding(.top)
-			
+
 			ForEach(items) { item in
 				NavigationLink(destination: EditItemView(item: item)) {
 					HStack(spacing: 20) {
 						Circle()
 							.stroke(Color(item.project?.projectColor ?? "Light Blue"), lineWidth: 3)
 							.frame(width: 44, height: 44)
-						
+
 						VStack(alignment: .leading) {
 							Text(item.itemTitle)
 								.font(.title2)
 								.foregroundColor(.primary)
 								.frame(maxWidth: .infinity, alignment: .leading)
-							
+
 							if item.itemDetail.isEmpty == false {
 								Text(item.itemDetail)
 									.foregroundColor(.secondary)
@@ -46,11 +46,11 @@ struct ItemListView: View {
 				}
 			}
 		}
-    }
+	}
 }
 
-//struct ItemListView_Previews: PreviewProvider {
+// struct ItemListView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        ItemListView()
 //    }
-//}
+// }
