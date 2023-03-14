@@ -153,10 +153,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4444E98E28F9864B00499F48 /* Build configuration list for PBXNativeTarget "UltimatePortfolioApp" */;
 			buildPhases = (
+				444E47A129C04B2900A0784A /* SwiftLint */,
 				4444E97C28F9864800499F48 /* Sources */,
 				4444E97D28F9864800499F48 /* Frameworks */,
 				4444E97E28F9864800499F48 /* Resources */,
-				444E47A129C04B2900A0784A /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -220,7 +220,8 @@
 /* Begin PBXShellScriptBuildPhase section */
 		444E47A129C04B2900A0784A /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
