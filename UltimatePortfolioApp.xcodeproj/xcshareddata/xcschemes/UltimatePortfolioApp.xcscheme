@@ -26,8 +26,30 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4444E97F28F9864800499F48"
+            BuildableName = "UltimatePortfolioApp.app"
+            BlueprintName = "UltimatePortfolioApp"
+            ReferencedContainer = "container:UltimatePortfolioApp.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "44233F1D29C2CDEF00DAAFC5"
+               BuildableName = "UltimatePortfolioAppTests.xctest"
+               BlueprintName = "UltimatePortfolioAppTests"
+               ReferencedContainer = "container:UltimatePortfolioApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
