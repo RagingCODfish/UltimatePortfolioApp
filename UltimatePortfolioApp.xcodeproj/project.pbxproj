@@ -12,6 +12,10 @@
 		44233F2C29C2D2BA00DAAFC5 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F2B29C2D2BA00DAAFC5 /* ProjectTests.swift */; };
 		44233F2E29C2D5CF00DAAFC5 /* AwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F2D29C2D5CF00DAAFC5 /* AwardTests.swift */; };
 		44233F3029C2E7EC00DAAFC5 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F2F29C2E7EC00DAAFC5 /* DevelopmentTests.swift */; };
+		44233F3229C2F85100DAAFC5 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F3129C2F85100DAAFC5 /* ExtensionTests.swift */; };
+		44233F3429C2F92400DAAFC5 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F3329C2F92400DAAFC5 /* Sequence-Sorting.swift */; };
+		44233F3729C2FC4F00DAAFC5 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 44233F3629C2FC4F00DAAFC5 /* DecodableDictionary.json */; };
+		44233F3929C2FC8A00DAAFC5 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 44233F3829C2FC8A00DAAFC5 /* DecodableString.json */; };
 		4444E98428F9864800499F48 /* UltimatePortfolioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444E98328F9864800499F48 /* UltimatePortfolioAppApp.swift */; };
 		4444E98628F9864800499F48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444E98528F9864800499F48 /* ContentView.swift */; };
 		4444E98828F9864B00499F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4444E98728F9864B00499F48 /* Assets.xcassets */; };
@@ -56,6 +60,10 @@
 		44233F2B29C2D2BA00DAAFC5 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
 		44233F2D29C2D5CF00DAAFC5 /* AwardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTests.swift; sourceTree = "<group>"; };
 		44233F2F29C2E7EC00DAAFC5 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
+		44233F3129C2F85100DAAFC5 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		44233F3329C2F92400DAAFC5 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
+		44233F3629C2FC4F00DAAFC5 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
+		44233F3829C2FC8A00DAAFC5 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
 		4444E98028F9864800499F48 /* UltimatePortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4444E98328F9864800499F48 /* UltimatePortfolioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioAppApp.swift; sourceTree = "<group>"; };
 		4444E98528F9864800499F48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,13 +117,24 @@
 		44233F1F29C2CDEF00DAAFC5 /* UltimatePortfolioAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				44233F3529C2FC2600DAAFC5 /* Fixtures */,
 				44233F2029C2CDEF00DAAFC5 /* UltimatePortfolioAppTests.swift */,
 				44233F2729C2CFA400DAAFC5 /* AssetTests.swift */,
 				44233F2B29C2D2BA00DAAFC5 /* ProjectTests.swift */,
 				44233F2D29C2D5CF00DAAFC5 /* AwardTests.swift */,
 				44233F2F29C2E7EC00DAAFC5 /* DevelopmentTests.swift */,
+				44233F3129C2F85100DAAFC5 /* ExtensionTests.swift */,
 			);
 			path = UltimatePortfolioAppTests;
+			sourceTree = "<group>";
+		};
+		44233F3529C2FC2600DAAFC5 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				44233F3629C2FC4F00DAAFC5 /* DecodableDictionary.json */,
+				44233F3829C2FC8A00DAAFC5 /* DecodableString.json */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 		442A738A29C099AE00C32210 /* Localization */ = {
@@ -129,10 +148,12 @@
 		442A738B29C099C600C32210 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				44884DA8290654B3007397ED /* Binding-OnChange.swift */,
 				4482A4F4290968A4006A5C0D /* Color-Additions.swift */,
 				44C9983A2907BE5200B2CCC0 /* Bundle-Decodable.swift */,
 				44884D7C29063199007397ED /* Item-CoreDataHelpers.swift */,
 				44884D7E2906329D007397ED /* Project-CoreDataHelpers.swift */,
+				44233F3329C2F92400DAAFC5 /* Sequence-Sorting.swift */,
 				442A738C29C099CF00C32210 /* Controllers */,
 			);
 			path = Extensions;
@@ -175,7 +196,6 @@
 				44884DAA29065E6A007397ED /* ProjectHeaderView.swift */,
 				44884DAE290662A2007397ED /* EditProjectView.swift */,
 				44A604B9299A153500A1969B /* ItemListView.swift */,
-				44884DA8290654B3007397ED /* Binding-OnChange.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -325,6 +345,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44233F3929C2FC8A00DAAFC5 /* DecodableString.json in Resources */,
+				44233F3729C2FC4F00DAAFC5 /* DecodableDictionary.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +394,7 @@
 				44233F2829C2CFA400DAAFC5 /* AssetTests.swift in Sources */,
 				44233F2E29C2D5CF00DAAFC5 /* AwardTests.swift in Sources */,
 				44233F2129C2CDEF00DAAFC5 /* UltimatePortfolioAppTests.swift in Sources */,
+				44233F3229C2F85100DAAFC5 /* ExtensionTests.swift in Sources */,
 				44233F2C29C2D2BA00DAAFC5 /* ProjectTests.swift in Sources */,
 				44233F3029C2E7EC00DAAFC5 /* DevelopmentTests.swift in Sources */,
 			);
@@ -390,6 +413,7 @@
 				44C998392907BC5200B2CCC0 /* SelectSomethingView.swift in Sources */,
 				44C9983F2907C4C300B2CCC0 /* Award.swift in Sources */,
 				44C998412907C56F00B2CCC0 /* AwardsView.swift in Sources */,
+				44233F3429C2F92400DAAFC5 /* Sequence-Sorting.swift in Sources */,
 				44884D7F2906329D007397ED /* Project-CoreDataHelpers.swift in Sources */,
 				44884DAF290662A2007397ED /* EditProjectView.swift in Sources */,
 				44A604BC299A172100A1969B /* ProjectSummaryView.swift in Sources */,
