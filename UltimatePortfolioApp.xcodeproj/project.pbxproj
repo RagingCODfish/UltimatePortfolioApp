@@ -11,6 +11,7 @@
 		44233F2829C2CFA400DAAFC5 /* AssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F2729C2CFA400DAAFC5 /* AssetTests.swift */; };
 		44233F2C29C2D2BA00DAAFC5 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F2B29C2D2BA00DAAFC5 /* ProjectTests.swift */; };
 		44233F2E29C2D5CF00DAAFC5 /* AwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F2D29C2D5CF00DAAFC5 /* AwardTests.swift */; };
+		44233F3029C2E7EC00DAAFC5 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F2F29C2E7EC00DAAFC5 /* DevelopmentTests.swift */; };
 		4444E98428F9864800499F48 /* UltimatePortfolioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444E98328F9864800499F48 /* UltimatePortfolioAppApp.swift */; };
 		4444E98628F9864800499F48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444E98528F9864800499F48 /* ContentView.swift */; };
 		4444E98828F9864B00499F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4444E98728F9864B00499F48 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		44233F2729C2CFA400DAAFC5 /* AssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTests.swift; sourceTree = "<group>"; };
 		44233F2B29C2D2BA00DAAFC5 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
 		44233F2D29C2D5CF00DAAFC5 /* AwardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTests.swift; sourceTree = "<group>"; };
+		44233F2F29C2E7EC00DAAFC5 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		4444E98028F9864800499F48 /* UltimatePortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4444E98328F9864800499F48 /* UltimatePortfolioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioAppApp.swift; sourceTree = "<group>"; };
 		4444E98528F9864800499F48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				44233F2729C2CFA400DAAFC5 /* AssetTests.swift */,
 				44233F2B29C2D2BA00DAAFC5 /* ProjectTests.swift */,
 				44233F2D29C2D5CF00DAAFC5 /* AwardTests.swift */,
+				44233F2F29C2E7EC00DAAFC5 /* DevelopmentTests.swift */,
 			);
 			path = UltimatePortfolioAppTests;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				44233F2E29C2D5CF00DAAFC5 /* AwardTests.swift in Sources */,
 				44233F2129C2CDEF00DAAFC5 /* UltimatePortfolioAppTests.swift in Sources */,
 				44233F2C29C2D2BA00DAAFC5 /* ProjectTests.swift in Sources */,
+				44233F3029C2E7EC00DAAFC5 /* DevelopmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
