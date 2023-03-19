@@ -40,6 +40,7 @@
 		44884DAF290662A2007397ED /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44884DAE290662A2007397ED /* EditProjectView.swift */; };
 		44A604BA299A153500A1969B /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A604B9299A153500A1969B /* ItemListView.swift */; };
 		44A604BC299A172100A1969B /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A604BB299A172100A1969B /* ProjectSummaryView.swift */; };
+		44AFB4F329C725730034B30E /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFB4F229C725730034B30E /* ProjectsViewModel.swift */; };
 		44C998392907BC5200B2CCC0 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C998382907BC5200B2CCC0 /* SelectSomethingView.swift */; };
 		44C9983B2907BE5200B2CCC0 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9983A2907BE5200B2CCC0 /* Bundle-Decodable.swift */; };
 		44C9983F2907C4C300B2CCC0 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9983E2907C4C300B2CCC0 /* Award.swift */; };
@@ -104,6 +105,7 @@
 		44884DAE290662A2007397ED /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		44A604B9299A153500A1969B /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		44A604BB299A172100A1969B /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
+		44AFB4F229C725730034B30E /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
 		44C998382907BC5200B2CCC0 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		44C9983A2907BE5200B2CCC0 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		44C9983E2907C4C300B2CCC0 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
@@ -221,8 +223,9 @@
 		442A738F29C099EE00C32210 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				44884D7A2902CA0E007397ED /* ProjectsView.swift */,
+				44AFB4F229C725730034B30E /* ProjectsViewModel.swift */,
 				44C998382907BC5200B2CCC0 /* SelectSomethingView.swift */,
-				44884DA629064C48007397ED /* ItemRowView.swift */,
 				44884DA429064817007397ED /* EditItemView.swift */,
 				44884DAA29065E6A007397ED /* ProjectHeaderView.swift */,
 				44884DAE290662A2007397ED /* EditProjectView.swift */,
@@ -236,7 +239,7 @@
 			children = (
 				44884D782902C97B007397ED /* HomeView.swift */,
 				44A604BB299A172100A1969B /* ProjectSummaryView.swift */,
-				44884D7A2902CA0E007397ED /* ProjectsView.swift */,
+				44884DA629064C48007397ED /* ItemRowView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				44884D792902C97B007397ED /* HomeView.swift in Sources */,
 				4444E98428F9864800499F48 /* UltimatePortfolioAppApp.swift in Sources */,
 				44884D7D29063199007397ED /* Item-CoreDataHelpers.swift in Sources */,
+				44AFB4F329C725730034B30E /* ProjectsViewModel.swift in Sources */,
 				44884DA529064817007397ED /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
