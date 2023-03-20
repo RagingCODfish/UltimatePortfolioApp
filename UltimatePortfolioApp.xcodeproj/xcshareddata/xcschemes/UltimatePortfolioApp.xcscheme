@@ -86,7 +86,7 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
-         identifier = "../../UltimatePortfolioApp/Configuration.storekit">
+         identifier = "../../UltimatePortfolioApp/Configuration/Configuration.storekit">
       </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction

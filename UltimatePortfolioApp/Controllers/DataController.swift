@@ -7,7 +7,9 @@
 
 import CoreData
 import CoreSpotlight
+import StoreKit
 import SwiftUI
+import UserNotifications
 
 /// An environment singleton responsible for managing our Core Data stack, including handling saving,
 /// counting fetch requests, tracking awards, and dealing with sample data.
@@ -38,7 +40,7 @@ class DataController: ObservableObject {
     /// - Parameter defaults: The UserDefaults suite where the user data should be stored.
     init(inMemory: Bool = false, defaults: UserDefaults = .standard) {
         self.defaults = defaults
-        
+
         container = NSPersistentCloudKitContainer(name: "Main", managedObjectModel: Self.model)
 
 		// For testing and previewing purposes, we create a temporary, in-memory database by writing to/dev/null so our data
@@ -260,6 +262,17 @@ class DataController: ObservableObject {
                     completion(false)
                 }
             }
+        }
+    }
+
+    func appLaunched() {
+        guard count(for: Project.fetchRequest()) >= 5 else { return }
+
+        let allScenes = UIApplication.shared.connectedScenes
+        let scene = allScenes.first { $0.activationState == .foregroundActive }
+
+        if let windowScene = scene as? UIWindowScene {
+            SKStoreReviewController.requestReview(in: windowScene)
         }
     }
 }
