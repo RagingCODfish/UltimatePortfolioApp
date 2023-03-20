@@ -18,6 +18,10 @@ struct EditProjectView: View {
     @State private var detail: String
     @State private var color: String
     @State private var showingDeleteConfirm = false
+    @State private var showingNotificationError = false
+
+    @State private var remindMe: Bool
+    @State private var reminderTIme: Date
 
     @State private var engine = try? CHHapticEngine()
 
@@ -31,6 +35,14 @@ struct EditProjectView: View {
         _title = State(wrappedValue: project.projectTitle)
         _detail = State(wrappedValue: project.projectDetail)
         _color = State(wrappedValue: project.projectColor)
+
+        if let projectReminderTime = project.reminderTime {
+            _reminderTIme = State(wrappedValue: projectReminderTime)
+            _remindMe = State(wrappedValue: true)
+        } else {
+            _reminderTIme = State(wrappedValue: Date())
+            _remindMe = State(wrappedValue: false)
+        }
 
     }
 
@@ -48,10 +60,28 @@ struct EditProjectView: View {
                 .padding(.vertical)
             }
 
-			// swiftlint:disable:next line_length
+            Section(header: Text("Project reminders")) {
+                Toggle("Show reminders", isOn: $remindMe.animation().onChange(update))
+                    .alert(isPresented: $showingNotificationError) {
+                        Alert(title: Text("Oops!"),
+                              message: Text("There was a problem. Please check you have notifications enabled."),
+                              primaryButton: .default(Text("Check Settings"), action: showAppSettings),
+                              secondaryButton: .cancel()
+                        )
+                    }
+
+                if remindMe {
+                    DatePicker(
+                        "Reminder time",
+                        selection: $reminderTIme.onChange(update),
+                        displayedComponents: .hourAndMinute
+                    )
+                }
+            }
+
+            // swiftlint:disable:next line_length
             Section(footer: Text("Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely")) {
                 Button(project.closed ? "Reopen this project" : "Close this project", action: toggleClosed)
-
 
                 Button("Delete this project") {
                     showingDeleteConfirm.toggle()
@@ -63,9 +93,9 @@ struct EditProjectView: View {
         .onDisappear(perform: dataController.save)
         .alert(isPresented: $showingDeleteConfirm) {
             Alert(title: Text("Delete project?"),
-				  message: Text("Are you sure you want to delete this project? You will also detet all the items it contains."),
-				  primaryButton: .default(Text("Delete"), action: delete),
-				  secondaryButton: .cancel())
+                  message: Text("Are you sure you want to delete this project? You will also detet all the items it contains."),
+                  primaryButton: .default(Text("Delete"), action: delete),
+                  secondaryButton: .cancel())
         }
     }
 
@@ -73,6 +103,22 @@ struct EditProjectView: View {
         project.title = title
         project.detail = detail
         project.color = color
+
+        if remindMe {
+            project.reminderTime = reminderTIme
+
+            dataController.addReminders(for: project) { success in
+                if success == false {
+                    project.reminderTime = nil
+                    remindMe = false
+
+                    showingNotificationError = true
+                }
+            }
+        } else {
+            project.reminderTime = nil
+            dataController.removeReminders(for: project)
+        }
     }
 
     func delete() {
@@ -119,31 +165,41 @@ struct EditProjectView: View {
         }
     }
 
-	func colorButton(for item: String) -> some View {
-		ZStack {
-			Color(item)
-				.aspectRatio(1, contentMode: .fit)
-				.cornerRadius(6)
+    func colorButton(for item: String) -> some View {
+        ZStack {
+            Color(item)
+                .aspectRatio(1, contentMode: .fit)
+                .cornerRadius(6)
 
-			if item == color {
-				Image(systemName: "checkmark.circle")
-					.foregroundColor(.white)
-					.font(.largeTitle)
-			}
-		}
-		.onTapGesture {
-			color = item
-			update()
-		}
-		.accessibilityElement(children: .ignore)
-		.accessibilityAddTraits(
-			item == color
-			? [.isButton, .isSelected]
-			: .isButton
-		)
-		.accessibilityLabel(LocalizedStringKey(item))
-	}
+            if item == color {
+                Image(systemName: "checkmark.circle")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+            }
+        }
+        .onTapGesture {
+            color = item
+            update()
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityAddTraits(
+            item == color
+            ? [.isButton, .isSelected]
+            : .isButton
+        )
+        .accessibilityLabel(LocalizedStringKey(item))
+    }
+
+    func showAppSettings() {
+        guard let settingsURL = URL(string: UIApplication.openNotificationSettingsURLString) else {
+            return
+        }
+        if UIApplication.shared.canOpenURL(settingsURL) {
+            UIApplication.shared.open(settingsURL)
+        }
+    }
 }
+
 
 struct EditProjectView_Previews: PreviewProvider {
     static var previews: some View {
