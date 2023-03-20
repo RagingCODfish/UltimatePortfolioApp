@@ -93,7 +93,7 @@ struct EditProjectView: View {
         .onDisappear(perform: dataController.save)
         .alert(isPresented: $showingDeleteConfirm) {
             Alert(title: Text("Delete project?"),
-                  message: Text("Are you sure you want to delete this project? You will also detet all the items it contains."),
+                  message: Text("Are you sure you want to delete this project? You will also detet all the items it contains."), // swiftlint:disable:this line_length
                   primaryButton: .default(Text("Delete"), action: delete),
                   secondaryButton: .cancel())
         }
@@ -199,7 +199,6 @@ struct EditProjectView: View {
         }
     }
 }
-
 
 struct EditProjectView_Previews: PreviewProvider {
     static var previews: some View {
