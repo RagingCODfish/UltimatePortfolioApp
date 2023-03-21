@@ -56,7 +56,7 @@ class DataController: ObservableObject {
 
         container.loadPersistentStores { _, error in
             if let error = error {
-                fatalError("Fatal error loading store: \(error.localizedDescription)")
+                fatalError("Fatal error loading store: \(error)")
             }
 
             self.container.viewContext.automaticallyMergesChangesFromParent = true
@@ -162,7 +162,6 @@ class DataController: ObservableObject {
     func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
         (try? container.viewContext.count(for: fetchRequest)) ?? 0
     }
-
 
     func update(_ item: Item) {
         let itemID = item.objectID.uriRepresentation().absoluteString

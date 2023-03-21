@@ -61,6 +61,10 @@
 		4497CF6029C979010047E7B9 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497CF5F29C979010047E7B9 /* DataProvider.swift */; };
 		4497CF6229C9793F0047E7B9 /* SimpleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497CF6129C9793F0047E7B9 /* SimpleWidget.swift */; };
 		4497CF6429C979960047E7B9 /* ComplexWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497CF6329C979960047E7B9 /* ComplexWidget.swift */; };
+		4497CF6629C9A0A80047E7B9 /* SharedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497CF6529C9A0A80047E7B9 /* SharedProject.swift */; };
+		4497CF6829C9A0FD0047E7B9 /* SharedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497CF6729C9A0FD0047E7B9 /* SharedItem.swift */; };
+		4497CF6A29C9A1B70047E7B9 /* LoadStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497CF6929C9A1B70047E7B9 /* LoadStates.swift */; };
+		4497CF6D29C9A2740047E7B9 /* SharedProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497CF6C29C9A2740047E7B9 /* SharedProjectsView.swift */; };
 		44A604BA299A153500A1969B /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A604B9299A153500A1969B /* ItemListView.swift */; };
 		44A604BC299A172100A1969B /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A604BB299A172100A1969B /* ProjectSummaryView.swift */; };
 		44AFB4F329C725730034B30E /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFB4F229C725730034B30E /* ProjectsViewModel.swift */; };
@@ -70,6 +74,7 @@
 		44C9983B2907BE5200B2CCC0 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9983A2907BE5200B2CCC0 /* Bundle-Decodable.swift */; };
 		44C9983F2907C4C300B2CCC0 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9983E2907C4C300B2CCC0 /* Award.swift */; };
 		44C998412907C56F00B2CCC0 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C998402907C56F00B2CCC0 /* AwardsView.swift */; };
+		44E8231529C9DE7600A5ADE4 /* SharedItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E8231429C9DE7600A5ADE4 /* SharedItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +173,10 @@
 		4497CF5F29C979010047E7B9 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		4497CF6129C9793F0047E7B9 /* SimpleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidget.swift; sourceTree = "<group>"; };
 		4497CF6329C979960047E7B9 /* ComplexWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexWidget.swift; sourceTree = "<group>"; };
+		4497CF6529C9A0A80047E7B9 /* SharedProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedProject.swift; sourceTree = "<group>"; };
+		4497CF6729C9A0FD0047E7B9 /* SharedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItem.swift; sourceTree = "<group>"; };
+		4497CF6929C9A1B70047E7B9 /* LoadStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadStates.swift; sourceTree = "<group>"; };
+		4497CF6C29C9A2740047E7B9 /* SharedProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedProjectsView.swift; sourceTree = "<group>"; };
 		44A604B9299A153500A1969B /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		44A604BB299A172100A1969B /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 		44AFB4F229C725730034B30E /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
@@ -177,6 +186,7 @@
 		44C9983A2907BE5200B2CCC0 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		44C9983E2907C4C300B2CCC0 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		44C998402907C56F00B2CCC0 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		44E8231429C9DE7600A5ADE4 /* SharedItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItemsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +294,7 @@
 				442A739029C099F800C32210 /* Home */,
 				442A738F29C099EE00C32210 /* Projects */,
 				442A738E29C099E200C32210 /* Awards */,
+				4497CF6B29C9A1EF0047E7B9 /* Community */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -418,6 +429,18 @@
 				4497CF4229C949660047E7B9 /* Info.plist */,
 			);
 			path = PortfolioWidget;
+			sourceTree = "<group>";
+		};
+		4497CF6B29C9A1EF0047E7B9 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				4497CF6929C9A1B70047E7B9 /* LoadStates.swift */,
+				4497CF6729C9A0FD0047E7B9 /* SharedItem.swift */,
+				4497CF6529C9A0A80047E7B9 /* SharedProject.swift */,
+				4497CF6C29C9A2740047E7B9 /* SharedProjectsView.swift */,
+				44E8231429C9DE7600A5ADE4 /* SharedItemsView.swift */,
+			);
+			path = Community;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -638,8 +661,11 @@
 				4497CF3029C941640047E7B9 /* SceneDelegate.swift in Sources */,
 				44563DBE29C83C6E00E2A9B9 /* PurchaseButton.swift in Sources */,
 				44884DAB29065E6A007397ED /* ProjectHeaderView.swift in Sources */,
+				4497CF6829C9A0FD0047E7B9 /* SharedItem.swift in Sources */,
 				44563DC029C83DCC00E2A9B9 /* ProductView.swift in Sources */,
 				44C9983B2907BE5200B2CCC0 /* Bundle-Decodable.swift in Sources */,
+				4497CF6A29C9A1B70047E7B9 /* LoadStates.swift in Sources */,
+				4497CF6D29C9A2740047E7B9 /* SharedProjectsView.swift in Sources */,
 				4444E99328F986E400499F48 /* Main.xcdatamodeld in Sources */,
 				44AFB4F529C731330034B30E /* HomeViewModel.swift in Sources */,
 				44563DB929C8271600E2A9B9 /* UnlockManager.swift in Sources */,
@@ -648,7 +674,9 @@
 				44C9983F2907C4C300B2CCC0 /* Award.swift in Sources */,
 				4497CF4F29C94B130047E7B9 /* DataController-Reminders.swift in Sources */,
 				44C998412907C56F00B2CCC0 /* AwardsView.swift in Sources */,
+				4497CF6629C9A0A80047E7B9 /* SharedProject.swift in Sources */,
 				44233F3429C2F92400DAAFC5 /* Sequence-Sorting.swift in Sources */,
+				44E8231529C9DE7600A5ADE4 /* SharedItemsView.swift in Sources */,
 				44884D7F2906329D007397ED /* Project-CoreDataHelpers.swift in Sources */,
 				4497CF5329C94BCD0047E7B9 /* DataController-StoreKit.swift in Sources */,
 				44884DAF290662A2007397ED /* EditProjectView.swift in Sources */,
@@ -928,6 +956,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -960,6 +989,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

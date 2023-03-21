@@ -209,7 +209,7 @@ struct EditProjectView: View {
     }
 
     func showAppSettings() {
-        guard let settingsURL = URL(string: UIApplication.openNotificationSettingsURLString) else {
+        guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
             return
         }
         if UIApplication.shared.canOpenURL(settingsURL) {
