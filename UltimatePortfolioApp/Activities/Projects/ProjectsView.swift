@@ -102,11 +102,16 @@ struct ProjectsView: View {
         .sheet(isPresented: $viewModel.showingUnlockView) {
             UnlockView()
         }
+        .onOpenURL(perform: openUrl)
 	}
 
     init(dataController: DataController, showClosedProjects: Bool) {
         let viewModel = ViewModel(dataController: dataController, showClosedProjects: showClosedProjects)
         _viewModel = StateObject(wrappedValue: viewModel)
+    }
+
+    func openUrl(_ url: URL) {
+        viewModel.addProject()
     }
 }
 
