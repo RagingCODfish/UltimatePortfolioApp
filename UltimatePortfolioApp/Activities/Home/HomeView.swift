@@ -54,8 +54,8 @@ struct HomeView: View {
             .navigationTitle("Home")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    //Button("Add Data", action: viewModel.addSampleData)
-                    Button("Delete all", action: viewModel.dataController.deleteAll)
+                    Button("Add Data", action: viewModel.addSampleData)
+//                    Button("Delete all", action: viewModel.dataController.deleteAll)
                 }
             } // to be delete for complete project
             .onContinueUserActivity(CSSearchableItemActionType, perform: loadSpotlightItem)

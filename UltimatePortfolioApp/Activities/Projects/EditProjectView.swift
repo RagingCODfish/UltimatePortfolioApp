@@ -5,6 +5,7 @@
 //  Created by Zach Uptin on 24/10/2022.
 //
 
+import CloudKit
 import CoreHaptics
 import SwiftUI
 
@@ -90,6 +91,23 @@ struct EditProjectView: View {
             }
         }
         .navigationTitle("Edit Project")
+        .toolbar {
+            Button {
+                let records = project.prepareCloudRecords()
+                let operation = CKModifyRecordsOperation(recordsToSave: records, recordIDsToDelete: nil)
+                operation.savePolicy = .allKeys
+
+                operation.modifyRecordsCompletionBlock = { _, _, error in
+                    if let error = error {
+                        print("Error: \(error.localizedDescription)")
+                    }
+                }
+
+                CKContainer.default().publicCloudDatabase.add(operation)
+            } label: {
+                Label("Upload to iCloud", systemImage: "icloud.and.arrow.up")
+            }
+        }
         .onDisappear(perform: dataController.save)
         .alert(isPresented: $showingDeleteConfirm) {
             Alert(title: Text("Delete project?"),

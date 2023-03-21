@@ -306,9 +306,9 @@
 				44884DA629064C48007397ED /* ItemRowView.swift */,
 				44AFB4F629C7377E0034B30E /* ItemRowViewModel.swift */,
 				44C998382907BC5200B2CCC0 /* SelectSomethingView.swift */,
-				44884DA429064817007397ED /* EditItemView.swift */,
 				44884DAA29065E6A007397ED /* ProjectHeaderView.swift */,
 				44884DAE290662A2007397ED /* EditProjectView.swift */,
+				44884DA429064817007397ED /* EditItemView.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
