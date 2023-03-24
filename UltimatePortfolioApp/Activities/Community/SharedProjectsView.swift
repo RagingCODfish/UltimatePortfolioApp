@@ -38,7 +38,6 @@ struct SharedProjectsView: View {
         .navigationTitle("Shared Projects")
     }
 
-    
     func fetchSharedProjects() {
         guard loadState == .inactive else { return }
         loadState = .loading
