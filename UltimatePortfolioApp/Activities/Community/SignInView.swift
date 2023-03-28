@@ -41,7 +41,6 @@ Please note: we reserce the right to remove messages that are inappropriate or o
                             .signInWithAppleButtonStyle(colorScheme == .light ? .black : .white)
                             .frame(height: 44)
 
-
                         Button("Cancel", action: close)
                             .frame(maxWidth: .infinity)
                             .padding()

@@ -19,6 +19,7 @@
 		44233F3B29C3084F00DAAFC5 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F3A29C3084F00DAAFC5 /* PerformanceTests.swift */; };
 		44233F4329C330AE00DAAFC5 /* UltimatePortfolioAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F4229C330AE00DAAFC5 /* UltimatePortfolioAppUITests.swift */; };
 		44233F4529C330AE00DAAFC5 /* UltimatePortfolioAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44233F4429C330AE00DAAFC5 /* UltimatePortfolioAppUITestsLaunchTests.swift */; };
+		4436413529D2A1DC0073A6A7 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4436413429D2A1DC0073A6A7 /* ChatMessage.swift */; };
 		4444E98428F9864800499F48 /* UltimatePortfolioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444E98328F9864800499F48 /* UltimatePortfolioAppApp.swift */; };
 		4444E98628F9864800499F48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444E98528F9864800499F48 /* ContentView.swift */; };
 		4444E98828F9864B00499F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4444E98728F9864B00499F48 /* Assets.xcassets */; };
@@ -131,6 +132,7 @@
 		44233F4029C330AE00DAAFC5 /* UltimatePortfolioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimatePortfolioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44233F4229C330AE00DAAFC5 /* UltimatePortfolioAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioAppUITests.swift; sourceTree = "<group>"; };
 		44233F4429C330AE00DAAFC5 /* UltimatePortfolioAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4436413429D2A1DC0073A6A7 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		4444E98028F9864800499F48 /* UltimatePortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4444E98328F9864800499F48 /* UltimatePortfolioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioAppApp.swift; sourceTree = "<group>"; };
 		4444E98528F9864800499F48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -442,6 +444,7 @@
 				4497CF6529C9A0A80047E7B9 /* SharedProject.swift */,
 				4497CF6C29C9A2740047E7B9 /* SharedProjectsView.swift */,
 				44E8231429C9DE7600A5ADE4 /* SharedItemsView.swift */,
+				4436413429D2A1DC0073A6A7 /* ChatMessage.swift */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -698,6 +701,7 @@
 				44884D7D29063199007397ED /* Item-CoreDataHelpers.swift in Sources */,
 				44563DBC29C8390100E2A9B9 /* SKProduct-LocalizedPrice.swift in Sources */,
 				44AFB4F329C725730034B30E /* ProjectsViewModel.swift in Sources */,
+				4436413529D2A1DC0073A6A7 /* ChatMessage.swift in Sources */,
 				44884DA529064817007397ED /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
