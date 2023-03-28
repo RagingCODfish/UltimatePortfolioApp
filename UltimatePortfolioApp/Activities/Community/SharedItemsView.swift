@@ -119,8 +119,6 @@ struct SharedItemsView: View {
         }
 
         CKContainer.default().publicCloudDatabase.add(operation)
-        print("Print Statement-----  CKContainer.default().publicCloudDatabase.add(operation)")
-        print("////////////////////////////////////////////////////////////////////////////////")
     }
 
     func fetchChatMessages() {

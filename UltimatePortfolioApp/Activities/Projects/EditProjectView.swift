@@ -219,6 +219,7 @@ struct EditProjectView: View {
             operation.modifyRecordsCompletionBlock = { _, _, error in
                 if let error = error {
                     print("Error: \(error.localizedDescription)")
+                    print("/////////////////////// Error upload to cloud function")
                 }
             }
 

@@ -15,27 +15,30 @@ struct SharedProjectsView: View {
     @State private var loadState = LoadState.inactive
 
     var body: some View {
-        Group {
-            switch loadState {
-            case .inactive, .loading:
-                ProgressView()
-            case .noResults:
-                Text("No Results")
-            case .success:
-                List(projects) { project in
-                    NavigationLink(destination: SharedItemsView(project: project)) {
-                        VStack(alignment: .leading) {
-                            Text(project.title)
-                                .font(.headline)
+        NavigationView {
+            Group {
+                switch loadState {
+                case .inactive, .loading:
+                    ProgressView()
+                case .noResults:
+                    Text("No Results")
+                case .success:
+                    List(projects) { project in
+                        NavigationLink(destination: SharedItemsView(project: project)) {
+                            VStack(alignment: .leading) {
+                                Text(project.title)
+                                    .font(.headline)
 
-                            Text(project.owner)
+                                Text(project.owner)
+                            }
                         }
                     }
+                    .listStyle(InsetGroupedListStyle())
                 }
-                .listStyle(InsetListStyle())
             }
+            .navigationTitle("Shared Projects")
         }
-        .navigationTitle("Shared Projects")
+        .onAppear(perform: fetchSharedProjects)
     }
 
     func fetchSharedProjects() {
