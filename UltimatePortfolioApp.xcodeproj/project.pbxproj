@@ -71,6 +71,8 @@
 		44AFB4F329C725730034B30E /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFB4F229C725730034B30E /* ProjectsViewModel.swift */; };
 		44AFB4F529C731330034B30E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFB4F429C731330034B30E /* HomeViewModel.swift */; };
 		44AFB4F729C7377E0034B30E /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFB4F629C7377E0034B30E /* ItemRowViewModel.swift */; };
+		44B039B229D3E66D003ACDF3 /* Error-CloudKitMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B039B129D3E66D003ACDF3 /* Error-CloudKitMessages.swift */; };
+		44B039B429D3EB22003ACDF3 /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B039B329D3EB22003ACDF3 /* CloudError.swift */; };
 		44C998392907BC5200B2CCC0 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C998382907BC5200B2CCC0 /* SelectSomethingView.swift */; };
 		44C9983B2907BE5200B2CCC0 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9983A2907BE5200B2CCC0 /* Bundle-Decodable.swift */; };
 		44C9983F2907C4C300B2CCC0 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9983E2907C4C300B2CCC0 /* Award.swift */; };
@@ -185,6 +187,8 @@
 		44AFB4F229C725730034B30E /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
 		44AFB4F429C731330034B30E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		44AFB4F629C7377E0034B30E /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
+		44B039B129D3E66D003ACDF3 /* Error-CloudKitMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error-CloudKitMessages.swift"; sourceTree = "<group>"; };
+		44B039B329D3EB22003ACDF3 /* CloudError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudError.swift; sourceTree = "<group>"; };
 		44C998382907BC5200B2CCC0 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		44C9983A2907BE5200B2CCC0 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		44C9983E2907C4C300B2CCC0 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
@@ -270,6 +274,7 @@
 		442A738B29C099C600C32210 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				44B039B129D3E66D003ACDF3 /* Error-CloudKitMessages.swift */,
 				44563DBB29C8390100E2A9B9 /* SKProduct-LocalizedPrice.swift */,
 				44884DA8290654B3007397ED /* Binding-OnChange.swift */,
 				4482A4F4290968A4006A5C0D /* Color-Additions.swift */,
@@ -381,6 +386,7 @@
 				4497CF2F29C941640047E7B9 /* SceneDelegate.swift */,
 				4444E98528F9864800499F48 /* ContentView.swift */,
 				442A738D29C099D600C32210 /* Activities */,
+				44B039B329D3EB22003ACDF3 /* CloudError.swift */,
 				44563DC529C8440000E2A9B9 /* Unlock */,
 				442A738B29C099C600C32210 /* Extensions */,
 				442A738C29C099CF00C32210 /* Controllers */,
@@ -665,6 +671,7 @@
 				44884D7B2902CA0E007397ED /* ProjectsView.swift in Sources */,
 				4482A4F5290968A4006A5C0D /* Color-Additions.swift in Sources */,
 				4497CF3029C941640047E7B9 /* SceneDelegate.swift in Sources */,
+				44B039B229D3E66D003ACDF3 /* Error-CloudKitMessages.swift in Sources */,
 				44563DBE29C83C6E00E2A9B9 /* PurchaseButton.swift in Sources */,
 				44884DAB29065E6A007397ED /* ProjectHeaderView.swift in Sources */,
 				4497CF6829C9A0FD0047E7B9 /* SharedItem.swift in Sources */,
@@ -680,6 +687,7 @@
 				44C998392907BC5200B2CCC0 /* SelectSomethingView.swift in Sources */,
 				44C9983F2907C4C300B2CCC0 /* Award.swift in Sources */,
 				4497CF4F29C94B130047E7B9 /* DataController-Reminders.swift in Sources */,
+				44B039B429D3EB22003ACDF3 /* CloudError.swift in Sources */,
 				44C998412907C56F00B2CCC0 /* AwardsView.swift in Sources */,
 				4497CF6629C9A0A80047E7B9 /* SharedProject.swift in Sources */,
 				44233F3429C2F92400DAAFC5 /* Sequence-Sorting.swift in Sources */,
