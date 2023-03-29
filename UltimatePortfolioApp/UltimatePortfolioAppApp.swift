@@ -21,6 +21,7 @@ struct UltimatePortfolioAppApp: App {
         _unlockManager = StateObject(wrappedValue: unlockManager)
 
         #if targetEnvironment(simulator)
+        // Force a specific username becuase Sign In With Apple doesn't work in the simulator
         UserDefaults.standard.set("Zach", forKey: "username")
         #endif
 

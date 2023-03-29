@@ -18,6 +18,7 @@ struct SharedItemsView: View {
     @State private var messagesLoadState = LoadState.inactive
 
     @AppStorage("username") var username: String?
+    @AppStorage("chatCount") var chatCount = 0
     @State private var showingSignIn = false
     @State private var newChatText = ""
 
@@ -192,6 +193,7 @@ struct SharedItemsView: View {
             } else if let record = record {
                 let message = ChatMessage(from: record)
                 messages.append(message)
+                chatCount += 1
             }
         }
     }
