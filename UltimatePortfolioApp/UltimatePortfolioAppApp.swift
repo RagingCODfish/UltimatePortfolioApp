@@ -9,7 +9,9 @@ import SwiftUI
 
 @main
 struct UltimatePortfolioAppApp: App {
+//    #if os(iOS)
 //    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+//    #endif
     @StateObject var dataController: DataController
     @StateObject var unlockManager: UnlockManager
 
@@ -37,10 +39,10 @@ struct UltimatePortfolioAppApp: App {
 					// Automatically save when we detect that we are no longer the foreground app.
 					// Use this rather then the scene phase API so we can port to macOS,
 					// where scene phase won't detect our app losing focus as of macOS 11.1.
-					NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification),
+                    NotificationCenter.default.publisher(for: .willResignActive),
 						   perform: save
                 )
-                .onAppear(perform: dataController.appLaunched)
+//                .onAppear(perform: dataController.appLaunched)
         }
     }
 

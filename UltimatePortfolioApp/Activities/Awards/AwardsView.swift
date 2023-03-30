@@ -19,7 +19,7 @@ struct AwardsView: View {
 	}
 
 	var body: some View {
-		NavigationView {
+		StackNavigationView {
 			ScrollView {
 				LazyVGrid(columns: columns) {
 					ForEach(Award.allAwards) { award in
@@ -34,6 +34,7 @@ struct AwardsView: View {
 								.frame(width: 100, height: 100)
 								.foregroundColor(dataController.hasEarned(award: award) ? Color(award.color) : Color.secondary.opacity(0.5))
 						}
+                        .buttonStyle(.borderless)
 					}
 				}
 			}

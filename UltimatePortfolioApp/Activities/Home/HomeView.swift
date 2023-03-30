@@ -53,7 +53,7 @@ struct HomeView: View {
             .background(Color.systemGroupedBackground.ignoresSafeArea())
             .navigationTitle("Home")
             .toolbar {
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                ToolbarItemGroup(placement: .primaryAction) {
                     Button("Add Data", action: viewModel.addSampleData)
 //                    Button("Delete all", action: viewModel.dataController.deleteAll)
                 }
